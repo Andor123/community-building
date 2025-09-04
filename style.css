@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#preloader {
+    background: #f0e130 url('images/walk.gif') no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+iframe {
+    height: auto;
+    width: 100%;
+}
+
+#next {
+    height: auto;
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: 32vh;
+    left: 50vh;
+}
+
+#button {
+    background: #f0e130;
+    border: 3px solid #000;
+    padding: 5px;
+}
+
+#part1, #part2 {
+    background: #f0e130;
+    height: 100vh;
+    width: 100%;
+}
+
+#dialogue-box1 {
+    background: #000;
+    height: auto;
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: 32vh;
+    left: 50vh;
+}
+
+#hey1 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#hey2 {
+    color: #f0e130;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    color: #fff;
+}
