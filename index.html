@@ -10,14 +10,38 @@
         <div id="preloader"></div>
         <div id="part1">
             <div id="dialogue-box1">
-                <h1 id="hey1">Hey You!</h1>
-                <h1 id="hey2">Yeah, YOU!</h1>
+                <h1 class="hey1">Hey You!</h1>
+                <h1 class="hey2">Yeah, YOU!</h1>
                 <h2 class="paragraph">Are you ready to change your life forever?</h2>
                 <h2 class="paragraph">Then come inside this house and we'll show you 
                     what is going to await for you.</h2>
             </div>
-            <div id="next">
-                <button type="button" id="button" onclick="next1()">Next</button>
+            <div id="next1">
+                <button type="button" class="button" onclick="next1()">Next</button>
+            </div>
+        </div>
+        <div id="part2">
+            <div id="dialogue-box2">
+                <h1 class="hey1">Come here!</h1>
+                <h1 class="hey2">Here's a nice pool!</h1>
+                <h2 class="paragraph">There's a lot of great activities like this one.</h2>
+                <h2 class="paragraph">Join a community, where you can meet new people, 
+                    make new friendships and have a good time.</h2>
+            </div>
+            <div id="next2">
+                <button type="button" class="button" onclick="next2()">Next</button>
+            </div>
+        </div>
+        <div id="part3">
+            <div id="dialogue-box3">
+                <h1 class="hey1">You have arrived!</h1>
+                <h1 class="hey2">Come take a seat here!</h1>
+                <h2 class="paragraph">Be a part of our Gentle Community.</h2>
+                <h2 class="paragraph">Fill the form, and be part of our community, 
+                    where you can experience the comfort, the luxury and even more!</h2>
+            </div>
+            <div id="join">
+                <a href="join.html" class="button">Join</a>
             </div>
         </div>
         <script>
@@ -35,8 +59,29 @@
         <script>
             function next1() {
                 var part1 = document.getElementById("part1");
+                var part2 = document.getElementById("part2");
                 part1.style.opacity = 0;
                 part1.style.transition = "0.5s";
+                part2.style.opacity = 1;
+                part2.style.transition = "0.5s";
+                setTimeout(function() {
+                    part1.style.display = "none";
+                    part2.style.display = "block";
+                }, 100);
+            }
+        </script>
+        <script>
+            function next2() {
+                var part2 = document.getElementById("part2");
+                var part3 = document.getElementById("part3");
+                part2.style.opacity = 0;
+                part2.style.transition = "0.5s";
+                part3.style.opacity = 1;
+                part3.style.transition = "0.5s";
+                setTimeout(function() {
+                    part2.style.display = "none";
+                    part3.style.display = "block";
+                }, 100);
             }
         </script>
     </body>
