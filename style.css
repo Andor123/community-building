@@ -40,7 +40,8 @@ iframe {
     right: 50vh;
 }
 
-#join-form {
+#join-form,
+#success {
     height: auto;
     width: 30%;
     margin: 0 auto;
@@ -63,7 +64,7 @@ iframe {
 }
 
 #part2 {
-    background: url('images/IMG_3075.jpg') no-repeat center center;
+    background: url('images/IMG_1234.jpg') no-repeat center center;
     height: 100vh;
     width: 100%;
     opacity: 0;
@@ -78,7 +79,8 @@ iframe {
     display: none;
 }
 
-#join-container {
+#join-container,
+#success-container {
     background: #f0e130;
     height: 100vh;
     width: 100%;
@@ -90,7 +92,8 @@ iframe {
     background: #000;
 }
 
-#join-form {
+#join-form,
+#success {
     background: #fff;
 }
 
@@ -111,7 +114,34 @@ iframe {
     font-size: 21px;
 }
 
+.join1 {
+    text-transform: uppercase;
+    font-size: 27px;
+}
+
+.join2 {
+    font-size: 21px;
+}
+
 a {
     text-decoration: none;
     color: #000;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 50%;
+    background: #f0e130;
+    color: #000;
+    border: 3px solid #000;
+}
+
+select {
+    width: 25%;
+    background: #f0e130;
+    color: #000;
+    border: 3px solid #000;
 }

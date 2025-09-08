@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gentle Community Building</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="preloader"></div>
+        <div id="success-container">
+            <div id="success">
+                <h1 class="join1">Congratulations!</h1>
+                <h2 class="join2">You have successfully become a part of our community!</h2>
+                <a href="index.html" class="button">Go back</a>
+            </div>
+        </div>
+        <script>
+            var loader = document.getElementById("preloader");
+            window.onload = function() {
+                setTimeout(function() {
+                    loader.style.opacity = 0;
+                    loader.style.transition = "0.5s";
+                    setTimeout(function() {
+                        loader.style.display = "none";
+                    }, 1500);
+                }, 1500);
+            }
+        </script>
+    </body>
+</html>

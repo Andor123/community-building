@@ -10,22 +10,23 @@
         <div id="preloader"></div>
         <div id="join-container">
             <div id="join-form">
-                <h1>Gentle Community Building</h1>
-                <h2>Fill the form to join our community!</h2>
-                <form method="post" action="join.php">
+                <h1 class="join1">Gentle Community Building</h1>
+                <h2 class="join2">Fill the form to join our community!</h2>
+                <form method="post" action="join.php" enctype="multipart/form-data">
                     <label for="name">Name</label><br>
-                    <input type="text" id="name" name="name" placeholder="Name"><br><br>
+                    <input type="text" id="name" name="name" placeholder="Name" required><br><br>
                     <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" placeholder="Email"><br><br>
+                    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
                     <label for="age">Age</label><br>
-                    <input type="number" id="age" name="age" placeholder="Age"><br><br>
+                    <input type="number" id="age" name="age" placeholder="Age" required><br><br>
                     <label for="gender">Gender</label><br>
-                    <select id="gender" name="gender">
+                    <select id="gender" name="gender" required>
+                        <option value="">Choose a gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                     </select><br><br>
                     <label for="photo">Photo</label><br>
-                    <input type="file" id="photo" name="photo"><br><br>
+                    <input type="file" id="photo" name="photo" required><br><br>
                     <button type="submit" class="button" id="submit">Submit</button>
                 </form>
             </div>
