@@ -16,11 +16,17 @@ mysqli_query($connection, "SET COLLATION_CONNECTION='utf8_general_ci'") or die(m
 
 $name = $_POST["name"];
 $email = $_POST["email"];
+$phone = $_POST["phone"];
 $age = $_POST["age"];
 $gender = $_POST["gender"];
 $photo = $_FILES["photo"]["name"];
+$introduction = $_POST["introduction"];
 
-$sql = "INSERT INTO join_community (name, email, age, gender, photo) VALUES ('$name', '$email', '$age', '$gender', '$photo')";
+if ($phone !== "") {
+    $sql = "INSERT INTO join_community (name, email, phone, age, gender, photo, introduction) VALUES ('$name', '$email', '$phone', '$age', '$gender', '$photo', '$introduction')";    
+} else {
+    $sql = "INSERT INTO join_community (name, email, age, gender, photo, introduction) VALUES ('$name', '$email', '$age', '$gender', '$photo', '$introduction')";
+}
 $result = mysqli_query($connection, $sql) or die(mysqli_error($connection));
 
 if ($result) {

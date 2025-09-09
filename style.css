@@ -17,15 +17,55 @@ iframe {
     width: 100%;
 }
 
-#dialogue-box1, #next1,
-#dialogue-box3, #join {
+#image1 {
+    height: auto;
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: 32vh;
+    right: 50vh;
+}
+
+#image2 {
+    height: auto;
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: 15vh;
+    left: 50vh;
+}
+
+#image3 {
+    height: auto;
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: 22vh;
+    right: 50vh;
+}
+
+#image1 img,
+#image2 img {
+    width: 100%;
+    filter: drop-shadow(10px 10px 10px #000);
+}
+
+#image3 img {
+    width: 70%;
+    filter: drop-shadow(10px 10px 10px #000);
+}
+
+#dialogue-box1, #next1 {
     height: auto;
     width: 30%;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
     position: relative;
-    top: 32vh;
+    top: -10vh;
     left: 50vh;
 }
 
@@ -36,8 +76,19 @@ iframe {
     padding: 20px;
     text-align: center;
     position: relative;
-    top: 32vh;
+    top: -32vh;
     right: 50vh;
+}
+
+#dialogue-box3, #join {
+    height: auto;
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: -30vh;
+    left: 50vh;
 }
 
 #join-form,
@@ -48,7 +99,7 @@ iframe {
     padding: 20px;
     text-align: center;
     position: relative;
-    top: 17vh;
+    top: 15vh;
 }
 
 .button {
@@ -72,7 +123,7 @@ iframe {
 }
 
 #part3 {
-    background: url('images/IMG_3067.jpg') no-repeat center center;
+    background: url('images/IMG_1235.jpg') no-repeat center center;
     height: 100vh;
     width: 100%;
     opacity: 0;
@@ -132,7 +183,7 @@ label {
     font-weight: bold;
 }
 
-input {
+input, textarea {
     width: 50%;
     background: #f0e130;
     color: #000;
