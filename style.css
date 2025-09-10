@@ -99,7 +99,7 @@ iframe {
     padding: 20px;
     text-align: center;
     position: relative;
-    top: 15vh;
+    top: 10vh;
 }
 
 .button {
@@ -195,4 +195,62 @@ select {
     background: #f0e130;
     color: #000;
     border: 3px solid #000;
+}
+
+@media screen and (max-width: 1200px) {
+    #image1,
+    #image3 {
+        top: 5vh;
+        right: 0;
+        width: 25%;
+    }
+
+    #image2 {
+        top: 5vh;
+        left: 0;
+        width: 25%;
+    }
+
+    #dialogue-box1, #next1,
+    #dialogue-box3, #join {
+        top: 5vh;
+        left: 0;
+    }
+
+    #dialogue-box2, #next2 {
+        top: 5vh;
+        right: 0;
+    }
+
+    #join-form,
+    #success {
+        width: 60%;
+        top: 0;
+    }
+
+    .hey1, .join1 {
+        font-size: 15px;
+    }
+
+    .hey2, .join2 {
+        font-size: 18px;
+    }
+
+    .paragraph {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .hey1, .join1 {
+        font-size: 21px;
+    }
+
+    .hey2, .join2 {
+        font-size: 24px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+    }
 }
