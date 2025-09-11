@@ -181,9 +181,11 @@ a {
 
 label {
     font-weight: bold;
+    font-size: 18px;
 }
 
 input, textarea {
+    font-size: 18px;
     width: 50%;
     background: #f0e130;
     color: #000;
@@ -191,7 +193,8 @@ input, textarea {
 }
 
 select {
-    width: 25%;
+    font-size: 18px;
+    width: 50%;
     background: #f0e130;
     color: #000;
     border: 3px solid #000;
@@ -239,18 +242,47 @@ select {
     .paragraph {
         font-size: 12px;
     }
+
+    label, input, 
+    textarea, select {
+        font-size: 9px;
+    }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1000px) {
+@media screen and (min-width: 700px) and (max-width: 1200px) {
     .hey1, .join1 {
-        font-size: 21px;
-    }
-
-    .hey2, .join2 {
         font-size: 24px;
     }
 
+    .hey2, .join2 {
+        font-size: 27px;
+    }
+
     .paragraph {
+        font-size: 21px;
+    }
+
+    label, input, 
+    textarea, select {
         font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .hey1, .join1 {
+        font-size: 30px;
+    }
+
+    .hey2, .join2 {
+        font-size: 33px;
+    }
+
+    .paragraph {
+        font-size: 27px;
+    }
+
+    label, input, 
+    textarea, select {
+        font-size: 24px;
     }
 }
