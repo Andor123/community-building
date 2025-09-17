@@ -163,6 +163,14 @@ select {
 }
 
 @media screen and (max-width: 1700px) {
+    #part1 {
+        background-position: right center;
+    }
+
+    #part3 {
+        background-position: left center;
+    }
+
     #dialogue-box3, #join {
         top: 5vh;
         left: 0;
