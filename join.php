@@ -1,7 +1,7 @@
 <?php
 define("HOST", "localhost");
 define("USERNAME", "root");
-define("PASSWORD", "");
+define("PASSWORD", "root");
 define("DATABASE", "community_building");
 
 $connection = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE) or die(mysqli_connect_error());
